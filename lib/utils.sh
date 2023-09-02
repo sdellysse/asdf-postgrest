@@ -11,7 +11,7 @@ get_download_filename() {
   local -r os=$(get_os)
   local -r arch=$(get_arch)
 
-  if [ "$os" = "linux"] && [ "$arch" = "x86_64"]; then
+  if [ "$os" = "linux" ] && [ "$arch" = "x86_64" ]; then
     echo "postgrest-v${version}-linux-static-x64.tar.xz"
     return
   fi
